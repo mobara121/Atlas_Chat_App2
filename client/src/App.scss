@@ -1,0 +1,65 @@
+$border-radius: 0;
+$paragraph-margin-bottom: 0;
+
+$gray-600: rgb(245, 245, 245);
+
+@import "~bootstrap/scss/bootstrap";
+
+body{
+    min-height: 100vh;
+}
+
+.user-div:hover {
+    background-color: rgb(250, 250, 250);
+  }
+
+.message-box{
+  overflow-y: scroll;
+
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+ }
+}
+
+.user-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .meessage-input{
+      width: 100%;
+  }
+.message-input::placeholder{
+    color: rgba(0,0,0,0.5);
+}
+
+.info-text{
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.send-bar{
+  width: 100vw;
+  height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid #361999;
+        position: absolute;
+        bottom: 0;
+}
+
+.send-btn{
+  width: auto;
+        min-width: 5vw;
+        margin-right: 1vw;
+        color: #FF6495;
+        background-color: transparent;
+        border: none;
+        border-radius: 50%;
+        padding-left: 0;
+        padding-right: 0;
+}
